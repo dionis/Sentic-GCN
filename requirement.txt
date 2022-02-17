@@ -1,0 +1,5 @@
+numpy==1.15.4
+python-dateutil=2.8.2=pyhd3eb1b0_0
+pytorch=1.7.0=py3.7_cuda11.0.221_cudnn8.0.3_0
+pytorch-mutex=1.0=cuda
+spacy==2.0.18

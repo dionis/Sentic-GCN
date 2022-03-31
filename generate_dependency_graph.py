@@ -3,8 +3,13 @@
 import numpy as np
 import spacy
 import pickle
+import os
 
-nlp = spacy.load('en_core_web_sm')
+PATH_TO_SPACY_NLPMODEL = "spacy_models" + os.path.sep + "es_core_news_md" + os.path.sep + "es_core_news_md-3.1.0";
+#Original information
+# 'en_core_web_sm'
+
+nlp = spacy.load(PATH_TO_SPACY_NLPMODEL)
 
 
 def dependency_adj_matrix(text):

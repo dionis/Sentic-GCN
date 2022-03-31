@@ -36,7 +36,7 @@ class Instructor:
 
         if 'bert' in opt.model_name:
             tokenizer = Tokenizer4Bert(opt.max_seq_len, opt.pretrained_bert_name)
-            bert = BertModel.from_pretrained(opt.pretrained_bert_name)
+            bert = BertModel.from_pretrained(opt.pretrained_bert_name, cache_dir = "Transformer" + os.path.sep)
             self.model = opt.model_class(bert, opt).to(opt.device)
         else:
             tokenizer = build_tokenizer(

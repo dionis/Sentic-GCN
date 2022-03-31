@@ -3,7 +3,7 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import ipdb
+#import ipdb
 
 class Attention(nn.Module):
     def __init__(self, embed_dim, hidden_dim=None, out_dim=None, n_head=1, score_function='dot_product', dropout=0):
@@ -137,7 +137,7 @@ class Attention_Masked(nn.Module):
         mb_size = k.shape[0]  # ?
         k_len = k.shape[1]
         q_len = q.shape[1]
-        ipdb.set_trace()
+        #ipdb.set_trace()
         mask = torch.tensor([[0]*step + [-10000]*(k_len-step) for step in k_step.numpy()],dtype=torch.float ).unsqueeze(1)
         mask = torch.cat([mask for _ in range(self.n_head)],dim=0)
 

@@ -39,8 +39,8 @@ class Inferer:
             },
         }
 
-        self.tokenizer = Tokenizer4Bert(self.opt.max_seq_len, self.opt.pretrained_bert_name)
-        bert = BertModel.from_pretrained(opt.pretrained_bert_name)
+        self.tokenizer = Tokenizer4Bert(self.opt.max_seq_len, self.opt.pretrained_bert_name,cache_dir = "Transformer" + os.path.sep,  local_files_only=True)
+        bert = BertModel.from_pretrained(opt.pretrained_bert_name,cache_dir = "Transformer" + os.path.sep,  local_files_only=True)
         self.model = self.opt.model_class(bert, opt).to(opt.device)
         print('loading model {0} ...'.format(opt.model_name))
         self.model.load_state_dict(torch.load(opt.state_dict_path))

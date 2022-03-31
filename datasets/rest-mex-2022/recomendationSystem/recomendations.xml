@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<recomendations source="https://sites.google.com/cicese.edu.mx/rest-mex-2022/tracks/recommendation-system-task">
+    <recomendation>
+        <tourist>
+            <gender>Male</gender>
+            <place>Jalisco</place>
+            <self-description>Me gusta Tomar fotografías por los lugares a donde viajo</self-description>
+            <reviwes>All user reviews that the tourist has previously issued*</reviwes>
+        </tourist>
+        <place>
+            <name>El muelle de San Blas</name>
+            <description>Se encuentra justo al final de la autopista Tepic. Sobre a las calmadas aguas de la Bahía de
+                Matanchén, se encuentra este muelle de más de 200 metros de longitud. Cuenta con distintas bancas
+                semi-techadas para disfrutar de la brisa del mar e iluminación nocturna. En su extremo marítimo, se
+                encuentra la estatua de “La Loca de San Blas”, un tributo a Rebeca Méndez Jiménez cuya historia se hizo
+                famosa por la canción del grupo Maná “En el Muelle de San Blas”, la cual menciona al muelle en la
+                cabecera municipal y no éste nuevo.
+            </description>
+            Description:
+            <features>
+                <aspect>public</aspect>
+                <aspect>beach</aspect>
+                <aspect>familiar</aspect>
+            </features>
+            <satisfaction details="most positive">5</satisfaction>
+        </place>
+    </recomendation>
+</recomendations>
